@@ -1,0 +1,5 @@
+Build/
+Index/
+ParseSVM.xcodeproj
+.DS_Store
+release/
