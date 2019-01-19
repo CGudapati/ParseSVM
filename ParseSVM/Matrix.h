@@ -14,7 +14,7 @@
 
 #include <vector>
 
-struct Matrix{
+struct CRS_Matrix{
     
     long long nzmax;  //maximum number of entries
     int m;  //Number of rows
@@ -26,9 +26,9 @@ struct Matrix{
     
     std::vector<int> y_label;
 
-    Matrix() = default;
+    CRS_Matrix() = default;
     
-    Matrix(int m, int n, long long nzmax) {
+    CRS_Matrix(int m, int n, long long nzmax) {
         this->m = m;
         this->n = n;
         this->nzmax = nzmax;

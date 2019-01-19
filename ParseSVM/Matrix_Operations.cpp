@@ -23,7 +23,7 @@ double cumulative_sum( std::vector<int> &Cp, std::vector<int> &col_count, int n 
 }
 
 
-CCS_Matrix transpose(const Matrix & A )
+CCS_Matrix transpose(const CRS_Matrix & A )
 {
     
     
@@ -62,6 +62,8 @@ CCS_Matrix transpose(const Matrix & A )
             
         }
     }
+    
+    C.y_label = A.y_label;
     
     return C;
     

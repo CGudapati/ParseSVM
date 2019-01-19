@@ -11,12 +11,37 @@
 
 #include <stdio.h>
 #include "Matrix.h"
+#include <vector>
+#include <iostream>
 
+template <typename T>
+void count_labels(const std::vector<T> & vec){
+    int positive = 0;
+    int negative = 0;
+    for(auto elem : vec){
+        if (elem > 0) {
+            positive++;
+        }
+        else{
+            negative++;
+        }
+    }
+    std::cout << "pos labels: " << positive << " negative labels: " << negative << std::endl;
+}
+
+
+template <typename T>
+void print_vector(const std::vector<T> & vec){
+    for(auto elem : vec){
+        std::cout << elem << " ";
+    }
+    std::cout << std::endl;
+}
 
 double cumulative_sum( std::vector<int> &Cp, std::vector<int> &col_count, int n);
 
 
-CCS_Matrix transpose(const Matrix & A );
+CCS_Matrix transpose(const CRS_Matrix & A );
 
 
 

@@ -10,15 +10,19 @@
 #include <iostream>
 #include <string>
 #include "ParseSVM.hpp"
+#include "Matrix_Operations.hpp"
 
 int main(int argc, const char * argv[]) {
     
-    const std::string file_name = "demo.txt";
+    const std::string file_path = argv[1];
     
-    Matrix M;
+    CCS_Matrix M;
     
-    get_CCSM_from_svm(M, file_name);
+    get_CCSM_from_svm(M, file_path);
     
-    
+//    print_vector(M.y_label);
+//    count_labels(M.y_label);
+//    std::cout << "Num observations: " << M.m << std::endl;
+//    std::cout << "Num features: " << M.n << std::endl;
     return 0;
 }
