@@ -23,7 +23,7 @@ double cumulative_sum( std::vector<int> &Cp, std::vector<int> &col_count, int n 
 }
 
 
-CCS_Matrix transpose(const CRS_Matrix & A )
+Classification_Data_CCS transpose(const Classification_Data_CRS & A )
 {
     
     
@@ -36,7 +36,7 @@ CCS_Matrix transpose(const CRS_Matrix & A )
     std::vector<int> w(m, 0);  //  Creating the working vector of size m. This will hold the number of elements in each
     //  column of the transposed matrix.
     
-    CCS_Matrix C = CCS_Matrix(n,m,nz);
+    Classification_Data_CCS C = Classification_Data_CCS(n,m,nz);
     
     
     

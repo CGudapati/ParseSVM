@@ -16,13 +16,12 @@ int main(int argc, const char * argv[]) {
     
     const std::string file_path = argv[1];
     
-    CCS_Matrix M;
+    Classification_Data_CCS M;
     
     get_CCSM_from_svm(M, file_path);
     
-//    print_vector(M.y_label);
-//    count_labels(M.y_label);
-//    std::cout << "Num observations: " << M.m << std::endl;
-//    std::cout << "Num features: " << M.n << std::endl;
+    count_labels(M.y_label);
+    std::cout << "Num observations: " << M.m << std::endl;
+    std::cout << "Num features: " << M.n << std::endl;
     return 0;
 }

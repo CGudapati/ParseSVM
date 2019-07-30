@@ -30,18 +30,11 @@ void count_labels(const std::vector<T> & vec){
 }
 
 
-template <typename T>
-void print_vector(const std::vector<T> & vec){
-    for(auto elem : vec){
-        std::cout << elem << " ";
-    }
-    std::cout << std::endl;
-}
 
 double cumulative_sum( std::vector<int> &Cp, std::vector<int> &col_count, int n);
 
 
-CCS_Matrix transpose(const CRS_Matrix & A );
+Classification_Data_CCS transpose(const Classification_Data_CRS & A );
 
 
 

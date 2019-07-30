@@ -14,7 +14,7 @@
 
 #include <vector>
 
-struct CRS_Matrix{
+struct Classification_Data_CRS{
     
     long long nzmax;  //maximum number of entries
     int m;  //Number of rows
@@ -26,9 +26,9 @@ struct CRS_Matrix{
     
     std::vector<int> y_label;
 
-    CRS_Matrix() = default;
+    Classification_Data_CRS() = default;
     
-    CRS_Matrix(int m, int n, long long nzmax) {
+    Classification_Data_CRS(int m, int n, long long nzmax) {
         this->m = m;
         this->n = n;
         this->nzmax = nzmax;
@@ -40,7 +40,7 @@ struct CRS_Matrix{
    
 };
 
-struct CCS_Matrix{
+struct Classification_Data_CCS{
     
     long long nzmax;  //maximum number of entries
     int m;  //Number of rows
@@ -53,9 +53,9 @@ struct CCS_Matrix{
     std::vector<int> y_label;
 
 
-    CCS_Matrix() = default;
+    Classification_Data_CCS() = default;
     
-    CCS_Matrix(int m, int n, long long nzmax) {
+    Classification_Data_CCS(int m, int n, long long nzmax) {
         this->m = m;
         this->n = n;
         this->nzmax = nzmax;
