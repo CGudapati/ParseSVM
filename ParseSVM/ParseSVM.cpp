@@ -66,7 +66,7 @@ void get_CRSM_from_svm(Classification_Data_CRS &M, const std::string &file_path)
     
     //Normaliztion of the problem data. This is just normalizing each observation.
     
-    for (std::size_t i = 0; i < M.row_ptr.size(); i++) {
+    for (std::size_t i = 0; i < M.row_ptr.size()-1; i++) {
         //Let us normalize the feature values of each observation
         // Step 1) calculate the norm of all the features belonging to a single observation
         // Step 2) divide each feature value of every observation using the respective observation's norm
